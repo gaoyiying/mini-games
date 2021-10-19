@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Jigsaw_puzzle">
+
+    <TextView
+        android:id="@+id/pt_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间：0"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textColor="#FF0000"/>
+
+    <LinearLayout
+        android:id="@+id/pt_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pt_ib_00x00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@mipmap/pic_00x00" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_00x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@mipmap/pic_00x01" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_00x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@mipmap/pic_00x02" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pt_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pt_ib_01x00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@mipmap/pic_01x00" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_01x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@mipmap/pic_01x01" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_01x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@mipmap/pic_01x02" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pt_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pt_ib_02x00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@mipmap/pic_02x00" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_02x01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@mipmap/pic_02x01" />
+
+        <ImageButton
+            android:id="@+id/pt_ib_02x02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:src="@mipmap/pic_02x02"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pt_btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="restart"
+        android:layout_gravity="center"
+        android:text="重新开始"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/pt_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/yuantu"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
