@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/minigames/app/src/main/res/layout/activity_bird_game.xml" value="0.24547101449275363" />
+        <entry key="..\:/AndroidStudioProjects/minigames/app/src/main/res/layout/activity_game2048.xml" value="0.2368659420289855" />
         <entry key="..\:/AndroidStudioProjects/minigames/app/src/main/res/layout/activity_jigsaw_puzzle.xml" value="0.18070652173913043" />
+        <entry key="..\:/AndroidStudioProjects/minigames/app/src/main/res/layout/activity_main.xml" value="0.2368659420289855" />
+        <entry key="..\:/AndroidStudioProjects/minigames/app/src/main/res/layout/activity_sudoku.xml" value="0.24547101449275363" />
       </map>
     </option>
   </component>

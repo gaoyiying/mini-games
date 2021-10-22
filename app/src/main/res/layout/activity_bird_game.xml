@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BirdGame">
+
+    <com.swufe.stu.mini_games.GameView
+        android:id="@+id/bird_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/bird_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回主页"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <!--
+    <TextView
+        android:textColor="@color/purple_700"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/score"
+        android:paddingTop="10dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    -->
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/relative"
+        android:background="@drawable/scoreboard"
+        android:layout_width="300dp"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/scoreTxt"
+            android:layout_centerInParent="true"
+            android:text="分数："
+            android:textSize="15sp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_bird"
+            android:text="重新开始"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

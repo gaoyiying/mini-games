@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Minigames">
         <activity
+            android:name=".Game2048"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <!-- 不显示标题 -->
+        <!-- android:theme="@style/Theme.Minigames"> -->
+        <activity
             android:name=".Jigsaw_puzzle"
+            android:exported="true" />
+        <activity
+            android:name=".BirdGame"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

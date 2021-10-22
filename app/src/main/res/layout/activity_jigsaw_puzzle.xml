@@ -15,7 +15,7 @@
         android:text="时间：0"
         android:layout_gravity="center"
         android:textSize="25sp"
-        android:textColor="#FF0000"/>
+        android:textColor="@color/black"/>
 
     <LinearLayout
         android:id="@+id/pt_line1"
@@ -114,15 +114,35 @@
             android:visibility="invisible" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/pt_btn_restart"
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="restart"
-        android:layout_gravity="center"
-        android:text="重新开始"
-        android:background="@color/white"
-        android:layout_marginTop="20dp"/>
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/pt_btn_restart"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="restart"
+            android:paddingRight="20dp"
+            android:text="重新开始"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/pt_go"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="返回主页"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
 
     <ImageView
         android:id="@+id/pt_iv"
@@ -131,4 +151,5 @@
         android:layout_gravity="center"
         android:src="@mipmap/yuantu"
         android:layout_marginTop="20dp"/>
+
 </LinearLayout>
